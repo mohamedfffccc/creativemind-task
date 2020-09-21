@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/araby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:text="repo name"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/github_item_name"/>
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/araby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/github_item_name"
+                android:textSize="@dimen/_20sdp"
+                android:text="repo desc"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/github_item_desc"/>
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/araby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/github_item_desc"
+                android:textSize="@dimen/_20sdp"
+                android:text="repo username"
+                android:layout_margin="@dimen/_5sdp"
+
+                android:id="@+id/github_item_user_name"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

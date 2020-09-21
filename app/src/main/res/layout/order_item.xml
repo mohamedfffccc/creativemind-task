@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentRight="true"
+    android:layout_margin="5dp"
+    android:src="@drawable/type_car"
+    android:id="@+id/orderitem_item_iv_type"/>
+    <TextView
+        android:fontFamily="@font/araby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/orderitem_item_iv_type"
+        android:text="ابغي سيارة"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/orderitem_item_tv_text"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/orderitem_item_tv_text"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderitem_item_lin1"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@id/orderitem_item_iv_type"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_time"
+                />
+            <TextView
+                android:fontFamily="@font/araby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="منذ ساعة"
+                android:id="@+id/orderitem_item_tv_time"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_info_attendance"
+                />
+            <TextView
+                android:fontFamily="@font/araby"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" رجال"
+                android:id="@+id/orderitem_item_tv_gender"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/type_food"
+                android:id="@+id/orderitem_item_iv_fazaa_type"
+                />
+            <TextView
+                android:fontFamily="@font/araby"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" فزعة اكل"
+                android:id="@+id/orderitem_item_tv_faza_type"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_accept"
+                />
+            <TextView
+                android:fontFamily="@font/araby"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4"
+                android:id="@+id/orderitem_item_tv_count"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderitem_item_lin1"
+        android:fontFamily="@font/araby"
+
+
+        android:layout_toLeftOf="@id/orderitem_item_iv_type"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="الغاء"
+        android:textColor="@color/darkpurple"
+        android:background="@drawable/cancel_back"
+        android:id="@+id/orderitem_item_btn_cancel"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.MyOrdersFragment">
+    <com.google.android.material.tabs.TabLayout
+        android:background="@drawable/tab_background"
+
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_width="match_parent"
+        app:tabIndicator="@color/darkpurple"
+        android:id="@+id/fragment_orders_tab_layout"
+        app:tabSelectedTextColor="@color/darkpurple"
+
+        app:tabTextColor="#808080"
+        app:tabIndicatorColor="@color/darkpurple"
+        app:tabTextAppearance="@style/tabstyle"
+        app:tabIndicatorHeight="@dimen/_2sdp"
+
+        app:tabIndicatorFullWidth="false"
+        style="@style/tabstyle"
+
+
+
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            style="@style/tabstyle"
+
+
+
+
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:id="@+id/fragment_orders_tab_oone"
+
+            android:text="قيد الانتظار"
+            android:textColor="@color/black"/>
+        <com.google.android.material.tabs.TabItem
+            style="@style/tabstyle"
+
+            android:layout_width="wrap_content"
+            android:id="@+id/fragment_orders_tab_two"
+            android:layout_height="wrap_content"
+            android:text="تم القبول"
+            android:textColor="@color/black"/>
+        <com.google.android.material.tabs.TabItem
+            style="@style/tabstyle"
+
+            android:layout_width="wrap_content"
+            android:id="@+id/fragment_orders_tab_three"
+            android:layout_height="wrap_content"
+            android:text="تم الالغاء"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_orders_tab_layout"
+        android:id="@+id/container2"/>
+
+
+</RelativeLayout>
