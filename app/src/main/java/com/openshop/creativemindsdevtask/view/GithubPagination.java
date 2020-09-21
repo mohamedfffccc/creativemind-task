@@ -50,6 +50,8 @@ public class GithubPagination extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_github_pagination);
         ButterKnife.bind(this);
+        data = new ArrayList<>();
+
         linearLayoutManager = new LinearLayoutManager(this);
         paginationRvList.setLayoutManager(linearLayoutManager);
         getPaginatedData(1);
@@ -80,14 +82,14 @@ public class GithubPagination extends AppCompatActivity {
     }
 
     private void getPaginatedData(int i) {
-        data = new ArrayList<>();
-        getClient().getMine(1, 10, "85700a8ab5ad5336a9314e30e9849b9973df6069")
+        getClient().getMine(i, 10, "85700a8ab5ad5336a9314e30e9849b9973df6069")
                 .enqueue(new Callback<List<GithubSquare>>() {
                     @Override
                     public void onResponse(Call<List<GithubSquare>> call, Response<List<GithubSquare>> response) {
                         try {
                             data.addAll(response.body());
                             addDataToRoom(data);
+
                             adapter.notifyDataSetChanged();
 
                         } catch (Exception e) {
